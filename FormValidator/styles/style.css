@@ -1,0 +1,89 @@
+:root {
+  --SUCCESS-COLOR: green;
+  --ERROR_COLOR: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  border-radius: 3px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#form {
+  padding: 30px;
+}
+
+.formControl {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.formControl label {
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formControl input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.formControl input:focus {
+  outline: 3px solid #e9b3b3;
+}
+
+.formControl.success input {
+  border-color: var(--SUCCESS_COLOR);
+}
+
+.formControl.error input {
+  border-color: var(--ERROR_COLOR);
+}
+
+.formControl small {
+  color: var(--ERROR_COLOR);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.formControl.error small {
+  visibility: visible;
+}
+
+#form button {
+  background-color: #e9b3b3;
+  border: 3px solid white;
+  color: white;
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
