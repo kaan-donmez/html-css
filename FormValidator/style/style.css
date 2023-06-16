@@ -1,6 +1,6 @@
 :root {
-  --SUCCESS-COLOR: green;
-  --ERROR_COLOR: red;
+  --SUCCESS_COLOR: rgb(123, 255, 123);
+  --ERROR_COLOR: rgb(255, 54, 54);
 }
 
 * {
@@ -59,11 +59,11 @@ h2 {
 }
 
 .formControl.success input {
-  border-color: var(--SUCCESS_COLOR);
+  border: 2px solid var(--SUCCESS_COLOR);
 }
 
 .formControl.error input {
-  border-color: var(--ERROR_COLOR);
+  border: 2px solid var(--ERROR_COLOR);
 }
 
 .formControl small {
