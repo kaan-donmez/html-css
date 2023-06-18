@@ -1,3 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
+}
+
+h1 {
+  color: white;
+  background-color: rgb(140, 49, 49);
+  font-size: 50px;
+}
+
+#gameBoard {
+  margin-top: 50px;
 }
