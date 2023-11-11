@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #25282f;
+}
+
+.slider {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: 10px;
+  background: #25282f;
+  overflow: hidden;
+}
+
+.slider .slide {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.slider .slide.active {
+  clip-path: circle(200% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.slider .slide img {
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.slider .slide .info {
+  position: absolute;
+  top: 0;
+  padding: 15px 30px;
+}
+
+.slider .slide .info h2 {
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.slider .slide .info p {
+  color: #fff;
+  background: rgb(0, 0, 0, 0.2);
+  font-size: 16px;
+  width: 60%;
+  border-radius: 4px;
+}
+
+.slider .navigation {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider .navigation .radioButton {
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider .navigation .radioButton.active {
+  background: #128574;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
