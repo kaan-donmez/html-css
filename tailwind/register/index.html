@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="flex bg-gray-50 dark:bg-gray-900">
+      <div
+        class="hidden lg:block lg:w-1/3 bg-cover"
+        style="
+          background-image: url(https://images.pexels.com/photos/18132119/pexels-photo-18132119/free-photo-of-panorama-from-skypoint-observation-deck-gold-coast-queensland-australia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        "
+      ></div>
+
+      <div
+        class="flex w-2/3 flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
+      >
+        <div class="w-full shadow md:mt-0 sm:max-w-md xl:p-0">
+          <div class="p-6 space-y-2 md:space-y-4 sm:p-4">
+            <div class="text-xl font-bold md:text-2xl dark:text-white">
+              Get more thing done with loggin platform.
+            </div>
+            <p class="dark:text-white">
+              Access to most powerful tool in the entire desing and web industry
+            </p>
+
+            <div class="flex">
+              <a href="#" class="mr-2 py-3 text-sm font-medium text-white"
+                >Login</a
+              >
+              <a
+                href="#"
+                class="ml-2 py-3 border-b-2 text-sm font-medium text-white"
+                >Register</a
+              >
+            </div>
+            <form class="space-y-4 md:space-y-6" action="#">
+              <div>
+                <input
+                  type="text"
+                  name="text"
+                  id="text"
+                  placeholder="Full Name"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 focus:bg-white block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 hover:bg-white hover:border-gray-400 focus:text-gray-900 hover:text-black"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 focus:bg-white block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 hover:bg-white hover:border-gray-400 focus:text-gray-900 hover:text-black"
+                  placeholder="E-mail Adrress"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 focus:bg-white block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 hover:bg-white hover:border-gray-400 focus:text-gray-900 hover:text-black"
+                  required
+                />
+              </div>
+              <div class="flex">
+                <button
+                  type="submit"
+                  class="py-2 px-8 rounded text-black bg-white"
+                >
+                  Register
+                </button>
+              </div>
+              <div class="flex">
+                <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                  Or login with
+                </p>
+
+                <a href="#" class="ml-4 text-sm font-small text-white"
+                  >Facebook</a
+                >
+                <a href="#" class="ml-2 text-sm font-small text-white"
+                  >Goggle</a
+                >
+                <a href="#" class="ml-2 text-sm font-small text-white"
+                  >Linkedin</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
